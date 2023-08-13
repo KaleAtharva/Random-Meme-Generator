@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+html{
+    font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.head{
+    background: linear-gradient(90deg, #672280 0%, #A626D3 100%);
+    height: 6.5rem;
+    width: 55rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 2rem;    
 }
 
-.App-link {
-  color: #61dafb;
+.trollFace{
+    height: 2.6218rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-name{
+    font-size: 2.0748rem;
+    font-weight: 700;
+    letter-spacing: -.2075rem;
+    margin-left: .5rem;
+    margin-right: auto;
+}
+
+.react{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.meme-form{
+    display: grid;
+    grid-template: 4rem 4rem / 1fr 1fr;
+    padding: 3.6rem;
+    gap: 1.7rem;
+}
+
+.meme-form input{
+    width: 23rem;
+    height: 3.5rem;
+    border-radius: .5rem;
+    border: .1rem solid #D5D4D8;
+    border-radius: .5rem;
+    text-indent: .5rem;
+}
+
+.form-button{
+    grid-column: 1/-1;
+    border-radius: .5rem;
+    background: linear-gradient(135deg, #711F8D 0%, #A818DA 100%);
+    color: antiquewhite;
+    border: none;
+    cursor: pointer;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meme{
+    position: relative;
+}
+
+.meme--image {
+    max-width: 50rem;
+    border-radius: .3rem;
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 1.5rem 0;
+    padding: 0 .5rem;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: .1rem;
+    text-shadow:
+        .2rem .2rem 0 #000,
+        -.2rem -.2rem 0 #000,
+        .2rem -.2rem 0 #000,
+        -.2rem .2rem 0 #000,
+        0 .2rem 0 #000,
+        .2rem 0 0 #000,
+        0 -.2rem 0 #000,
+        -2px 0 0 #000,
+        .2rem .2rem .5rem #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
+
+@media only screen and (max-width: 500px){
+    html{
+        font-size: 45%;
+    }
 }
